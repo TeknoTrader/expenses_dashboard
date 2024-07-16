@@ -69,7 +69,7 @@ def Scritte():
     st.sidebar.subheader("3) Segna i messaggi non letti ✅")
     st.sidebar.subheader("4) Dashboard per il controllo del software ✅")
     st.sidebar.subheader("5) Manutenzione e miglioramento mensile ✅")
-    st.sidebar.subheader("6) Collegamento canale TRFX ✅")
+    st.sidebar.subheader("6) Collegamento canale ✅")
     st.sidebar.subheader("7) Risposte di recap ai clienti ✅")
     st.sidebar.subheader("8) Collegamento ai dati di mercato ❌")
     st.sidebar.subheader("9) Accesso alle notizie ❌")
@@ -82,7 +82,7 @@ def Scritte():
     st.sidebar.subheader("3) Segna i messaggi non letti ✅")
     st.sidebar.subheader("4) Dashboard per il controllo del software ✅")
     st.sidebar.subheader("5) Manutenzione e miglioramento mensile ✅")
-    st.sidebar.subheader("6) Collegamento canale TRFX ✅")
+    st.sidebar.subheader("6) Collegamento canale ✅")
     st.sidebar.subheader("7) Risposte di recap ai clienti ✅")
     st.sidebar.subheader("8) Collegamento ai dati di mercato ✅")
     st.sidebar.subheader("9) Accesso alle notizie ✅")
@@ -95,7 +95,7 @@ def Scritte():
     st.sidebar.subheader("3) Segna i messaggi non letti ✅")
     st.sidebar.subheader("4) Dashboard per il controllo del software ✅")
     st.sidebar.subheader("5) Manutenzione e miglioramento mensile ✅")
-    st.sidebar.subheader("6) Collegamento canale TRFX ✅")
+    st.sidebar.subheader("6) Collegamento canale ✅")
     st.sidebar.subheader("7) Risposte di recap ai clienti ✅")
     st.sidebar.subheader("8) Collegamento ai dati di mercato ✅")
     st.sidebar.subheader("9) Accesso alle notizie ✅")
@@ -155,7 +155,7 @@ def CalcoloPercentuale(numero):
 
 ArrayCost = pd.DataFrame({
 'Euro': [cost*4,CalcoloPercentuale(Quota(QuotaLorda-(INPS+Contributi)/2)),CalcoloPercentuale(Quota(QuotaLorda-(INPS+Contributi)/2)),CalcoloPercentuale(Quota(INPS)),CalcoloPercentuale(Quota(Contributi))],
-'Spese': ['Infrastruttura','Nicola','Matteo','Ritenute INPS','Contributi']
+'Spese': ['Infrastruttura','Manutenzione server','Programmatore','Ritenute INPS','Contributi']
 })
 
 st.bar_chart(ArrayCost, x = 'Spese', y = 'Euro')
